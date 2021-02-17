@@ -9,9 +9,9 @@ rasax:
   # override the default arguments to run in the container
   args: []
   # name of the Rasa X image to use
-  name: "rasa/rasa-x"  # gcr.io/rasa-platform/rasa-x-ee
+  name: "lkmarca/rasax"  # gcr.io/rasa-platform/rasa-x-ee
   # tag refers to the Rasa X image tag (uses `appVersion` by default)
-  tag: ""
+  tag: "0.35.1"
   # port on which Rasa X runs
   port: 5002
   # scheme by which Rasa X is accessible
@@ -105,7 +105,7 @@ rasax:
 rasa:
   # version is the Rasa Open Source version which should be used.
   # Used to ensure backward compatibility with older Rasa Open Source versions.
-  version: "2.2.7"  # Please update the default value in the Readme when updating this
+  version: "2.2.8"  # Please update the default value in the Readme when updating this
   # override the default command to run in the container
   command: []
   # override the default arguments to run in the container
@@ -113,9 +113,9 @@ rasa:
   # add extra arguments to the command in the container
   extraArgs: []
   # name of the Rasa image to use
-  name: "rasa/rasa"
+  name: "lkmarca/rasa_spacy_lg_pt"
   # tag refers to the Rasa image tag. If empty `.Values.rasa.version-full` is used.
-  tag: ""
+  tag: "latest"
   # port on which Rasa runs
   port: 5005
   # scheme by which Rasa services are accessible
